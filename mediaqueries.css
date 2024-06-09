@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+    /* .navbar{
+        display: ;
+    } */
+ 
+    .headlist {
+        position: fixed;
+        left: -100%;
+        top: 5rem; 
+        flex-direction: column;
+        background-color: #fff;
+        width: fit-content;
+        /* max-height: 0; */
+        overflow: hidden;
+        transition: all 0.3s ease-in-out
+    }
+    
+    .headlist.active {
+        left: 0; 
+    }
+
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-icon.active .bar:first-child {
+        transform: translate(10px , 7px) rotate(45deg);
+    }
+    .hamburger-icon.active .bar:nth-child(2) {
+        opacity: 0 ;
+    }
+
+    .hamburger-icon.active .bar:last-child {
+        transform: translate(10px,-7px) rotate(-45deg);
+    }
+
+}
