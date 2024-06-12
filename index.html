@@ -13,23 +13,191 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="mediaqueries.css">
     </head>
+
     <body>
-        <div class="navbar">
-             <div class="logo">
-                   Bennoit Mukaya
-             </div>
-            <ul class="headlist">
+        <nav id="desktop-nav">
+            <div class="logo">Bennoit Mukanya</div>
+            <div>
+              <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">contacts</a></li>
-            </ul>
-            <div class="hamburger-icon" >
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <li><a href="#experience">Photography</a></li>
+                <li><a href="#projects">Videography</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </div>
+          </nav>
+          <nav id="hamburger-nav">
+            <div class="logo">John Doe</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+        <section id="profile">
+            <div id="section__profile">
+                <img src="/assets/WhatsApp Image 2024-06-10 at 14.21.59.jpeg" alt="This is an image by Bennoit Mukanya">
+            </div>
+            <div id="section__profile-text">
+                <p class="section__profile-text-p1">Hello, My name is </p>
+                <h1 class="title" >Benoit Mukanya</h1>
+                <p class="section__profile-text-p2">I'm a professional videographer</p>
+                <div id="section__profile-btn">
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+                    <button class="btn btn-color-2" onclick="location.href='./#project-cn'">Project</button>
+                </div>
+               
+                <div id="section__profile-icons">
+                    <img src="/assets/ig.png" class="icons" onclick="location.href= './https://www.instagram.com/shot_by_batchy?igsh=N2Z3NTlqYzExN21j'" alt="this is an instagram icon showcasing works">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__profile-text-p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+              <div class="section__pic-container">
+                <img
+                  src="./assets/WhatsApp Image 2024-06-10 at 14.21.59 (1).jpeg"
+                  alt="Profile picture"
+                  class="about-pic"
+                />
+              </div>
+              <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <span class="material-symbols-outlined">
+                        videocam
+                        </span>
+                    <h3>Experience</h3>
+                    <p>2+ years <br />Videographer & <br>Photographer</p>
+                  </div>
+                  <div class="details-container">
+                    <span class="material-symbols-outlined">
+                        school
+                        </span>
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelors Degree<br />Human resource <br> management</p>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                    reprehenderit et laborum, rem, dolore eum quod voluptate
+                    exercitationem nobis, nihil esse debitis maxime facere minus sint
+                    delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                    Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                    reiciendis ea magnam? Nulla, impedit fuga!
+                  </p>
+                </div>
+              </div>
+            </div>
+             <img
+              src="/assets/arrow_downward_20dp_FILL0_wght400_GRAD0_opsz20.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#project'" 
+            />
+          </section>
+      <section id="projects">
+            <h1 class="title" id="project-cn">Projects</h1>
+            <p class="section__profile-text-p1">Photographs</p>
+
+            <div class="project_carousel">
+                <input type="radio" name="position"  checked/>
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+               
+                <main id="carousel">
+                  <img src="/assets/bmu5.heic" alt=" a photo of a girl">
+                  
+                    <img src="/assets/bmu1.webp" alt="a photo of a girl">
+
+                  <img src="/assets/bmu2.webp" alt="a photo of a girl">
+                  
+                    <img src="/assets/bmu3.heic" alt="a photo of a girl">
+
+                  
+                    <img src="/assets/bmu4.heic" alt="a photo of a girl">
+                <main>
+            </div>
+
+            <!-- <img
+              src="/assets/arrow_downward_20dp_FILL0_wght400_GRAD0_opsz20.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#videography'"
+            /> -->
+        </section>
+
+
+        
+       <section id = "projects-vid">
+        <p class="section__profile-text-p1">Videography</p>
+        <div class="video-grid">
+            <video src="/assets/WhatsApp Video 2024-06-08 at 21.45.11.mp4" type="video/mp4"controls>
+            </video>
+            <video src="/assets/WhatsApp Video 2024-06-08 at 21.45.13.mp4" type="video/mp4" controls>
+            </video> 
+            <video  src="/assets/WhatsApp Video 2024-06-08 at 21.45.20.mp4" type="video/mp4" controls>
+            </video>
         </div>
+      </section>  
+
+             <img
+              src="/assets/arrow_downward_20dp_FILL0_wght400_GRAD0_opsz20.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+            />
+
+
+          
+          <section id="contact">
+            <p class="section__profile-text-p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="/assets/ig.png"
+                  alt="Instgram icon"
+                  class="icon instagram-icon"
+                />
+                <p><a href="https://www.instagram.com/shot_by_batchy?igsh=N2Z3NTlqYzExN21j">Instagram</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+          </footer> 
         <script src="index.js" async defer></script>
     </body>
 </html>

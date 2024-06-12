@@ -1,12 +1,19 @@
-const hamburgerActive = document.querySelector(".hamburger-icon")
-const menupaste = document.querySelector(".headlist")
-
-
-
-hamburgerActive.addEventListener("click",toggleMenu)
-
 function toggleMenu() {
-    hamburgerActive.classList.toggle("active"); 
-    menupaste.classList.toggle("active");
-    console.log(" You need to figure it out") 
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+
+//add an eventlistener for the closing the menu: 
+
+
+navLink.forEach(n => n.addEventListener("click" , closeMenu))
+
+function closeMenu () {
+    hamburgerActive.classList.remove("active")
+    menupaste.classList.remove("active")
 }
+
+
+
